@@ -25,15 +25,10 @@ Connection: close
 // IGNORE EVERYTHING BEFORE THIS LINE
 
 function process(httpResponse) {
-    var lines = httpResponse.split('\n');
-    for(var i = 0; i < 11; i++) {
-        lines.shift();
-    }
-    var numChars = 0;
-    for(var i = 0; i < lines.length; i++) {
-        numChars = numChars + lines[i].length + 1;
-    }
-    console.log("The number of characters on the page is " + numChars);
+   // Your code goes here
+   // Use the debugger to find out information about the httpResponse header.
+   // Once you know the input of this function looks like, you can write a function
+   // that computes the number of characters in the response body.
 }
 
 makeRequest("www.dolekemp96.org", http_request, process);
