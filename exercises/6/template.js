@@ -25,12 +25,7 @@ Connection: close
 // IGNORE EVERYTHING BEFORE THIS LINE
 
 function process(httpResponse) {
-    console.log(httpResponse)
-    if (httpResponse.indexOf('manipulated') != -1) {
-        console.log("the word is on the page");
-    } else {
-        console.log("the word is not the page");
-    }
+    // Your code goes here. Use the debugger to find out more about the httpResponse parameter.
 }
 var httpRequest = generateHTTPRequest('www.dolekemp96.org', '/');
 
