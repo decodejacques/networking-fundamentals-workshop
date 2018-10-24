@@ -1,5 +1,5 @@
 ## Description
-You want to serve a webpage that loads the html and javascript files described below.
+Your job is to create an HTTP server that loads an HTML file at the `/` path and a javascript file at the `/somescript.js` path. The HTTP server is located in the `template.js` file. Running `node template.js` will start the HTTP server.
 
 At the `/` path, the HTTP response should have a content type of `text/html` and the body should be the following:
 
