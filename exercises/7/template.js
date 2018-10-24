@@ -17,10 +17,10 @@ Connection: Closed
 
 ${x}`
 }
-function createServer(f) {
+function createServer() {
     net.createServer(function (sock) {
         sock.on('data', function (data) {
-            var httpResponse = f(data.toString());
+            var httpResponse = process(data.toString());
             if(!httpResponse) httpResponse = "";
             sock.write(httpResponse);
         });
@@ -28,4 +28,3 @@ function createServer(f) {
 }
 
 
-createServer(process);
