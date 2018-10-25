@@ -27,4 +27,4 @@ function createServer() {
     }).listen(3000)
 }
 
-
+createServer();
